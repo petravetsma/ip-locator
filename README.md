@@ -7,5 +7,5 @@ Start development server
 `npm run dev`
 
 Demo
-https://resilient-torrone-2fdfcd.netlify.app/
+https://get-info-about-ip.netlify.app/
 
