@@ -1,4 +1,3 @@
-import { GeolocationBase } from "../model/GeolocationBase";
 import { GeolocationData } from "../model/GeolocationData";
 import { GeolocationFailData } from "../model/GeolocationFailData";
 import { GeolocationFailResponse } from "../model/GeolocationFailResponse";

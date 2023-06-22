@@ -6,13 +6,12 @@ import { GeolocationData } from './model/GeolocationData';
 import { ConditionalRender } from './components/ConditionalRender';
 import { InputBar } from './logic/InputBar';
 import { IpInfoBlock } from './logic/IpInfoBlock';
-import { GeolocationFailData } from './model/GeolocationFailData';
 
 
 export function App() {
 
   const [geolocationData, setGeolocationData] = useState<GeolocationData>(GeolocationData.default);
-  const [geolocationFailData, setGeolocationFailData] = useState<GeolocationFailData>();
+  // const [geolocationFailData, setGeolocationFailData] = useState<GeolocationFailData>();
   const [isDataLoaded, setDataLoaded] = useState<boolean>(false);
 
   const geolocationService = new GeolocationService();
@@ -25,7 +24,7 @@ export function App() {
         if (data.success) {
           setGeolocationData(data)
         } else {
-          setGeolocationFailData(data)
+          // setGeolocationFailData(data)
         }
       })
   }, []);
@@ -39,7 +38,7 @@ export function App() {
         if (data.success) {
           setGeolocationData(data)
         } else {
-          setGeolocationFailData(data)
+          // setGeolocationFailData(data)
         }
       })
   }
