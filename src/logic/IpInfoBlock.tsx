@@ -3,7 +3,7 @@ import styled from "styled-components";
 const StyledInfoBlock = styled.div`
     display: flex;
     justify-content: center;
-    background: #fff;
+    color: var(--secondary);
 `
 
 type IpInfoProps = {

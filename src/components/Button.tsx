@@ -8,7 +8,7 @@ const StyledButton = styled.button`
     border: none;
     border-radius: 0 6px 6px 0;
     outline: none;
-    background: 50% no-repeat url('./src/assets/right-arrow.svg') #101820;
+    background: 50% no-repeat url('./src/assets/right-arrow.svg') var(--secondary);
 
     &:focus {
         outline: none;
@@ -25,7 +25,7 @@ type ButtonProps = {
 /**
  * Button with right arrow icon.
  */
-export function ArrowButton(props: ButtonProps) {
+export function Button(props: ButtonProps) {
 
     return (
         <StyledButton onClick={props.onClick} />

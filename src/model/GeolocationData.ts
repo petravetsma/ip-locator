@@ -67,7 +67,6 @@ export class GeolocationData extends GeolocationBase {
         connection,
     }: GeolocationSuccessResponse) {
         super(ip, success);
-        this.ip = ip;
         this.success = success;
         this.country = country;
         this.region = region;
@@ -81,26 +80,4 @@ export class GeolocationData extends GeolocationBase {
     static deserialize(json: GeolocationSuccessResponse) {
         return new GeolocationData(json)
     }
-
-    /**
-     * Use default data before initial data request 
-     * OR
-     * cannot get data from server.
-     */
-    static default() {
-        return new GeolocationData({
-            ip: '92.40.204.36',
-            success: true,
-            country: 'United Kingdom',
-            region: 'England',
-            city: 'Cullompton',
-            postal: 'EX15',
-            latitude: 50.91135,
-            longitude: -3.227796,
-            connection: {
-                isp: 'Hutchison 3G UK Limited',
-            }
-        })
-    }
-
 }

@@ -9,12 +9,13 @@ const StyledInput = styled.input`
     border: none;
     border-radius: 6px 0 0 6px;
     outline: none;
-    background: #fff;
+    color: var(--secondary)
 `
 
 type InputProps = {
     value: string;
     onChange: (value: string) => void;
+    placeholder?: string;
 }
 
 export function Input(props: InputProps) {
@@ -25,6 +26,6 @@ export function Input(props: InputProps) {
     }
 
     return (
-        <StyledInput type="text" value={props.value} onChange={handleInputChange} />
+        <StyledInput type="text" value={props.value} onChange={handleInputChange} placeholder={props.placeholder} />
     )
 }
