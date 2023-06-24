@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Test button component > Button rendered with SVG 1`] = `
+<button
+  className="sc-aXZVg bbjbIS"
+  onClick={[Function]}
+>
+  <svg
+    className="sc-gEvEer bytOwd"
+    height={24}
+    viewBox="0 0 24 24"
+    width={24}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <polygon
+      fill="white"
+      points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"
+    />
+  </svg>
+</button>
+`;
